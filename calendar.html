@@ -6,16 +6,39 @@
     content="width= device-width,initial-scale=1.0">
     <title>Calendar</title>
     <style>
-        .calendar{
+        .Calendar{
             display:grid;
-            grid-template-columns:
-            repeat(7,1fr)
+            grid-template-columns: repeat(7,1fr);
+            grid-template-rows: repeat(6,50px);
+            grid-row-gap:20px;
+            column-gap:10px;  
+           
+        }
+        .date, .day{
+            background-color: skyblue;
+             border-radius: 5px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             font-size: 1.5em;
+            
+        }
+        .day{
+            background-color:lightgrey;
+            font-size:1em;
         }
         
     </style>
 </head>
 <body>
     <div class="Calendar">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
         <div class="date">29</div>
         <div class="date">30</div>
         <div class="date">31</div>
