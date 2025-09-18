@@ -5,26 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive layout-II</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
     .container{
         display:grid;
-        grid-template-rows: repeat(2,2fr);
+        grid-template-rows: repeat(2,1fr);
         gap: 10px;
         width: 100%;
     }
-    .food{
+    .card{
+        width:100%;
+        height:50vh;
         border:2px solid lightgrey;
         padding:10px;
         border-radius:10px;
+      
     }
-    .food img{
+     .card-content {
+      padding: 15px;
+      flex: 1;
+    }
+
+    .card-content h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .card-content p {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .card-content button {
+      background: #007BFF;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .card img{
         display: grid;
         grid-template-rows: repeat(2,1fr);
-        width:400px;
+        width:500px;
         border-radius: 10px;
+       align-items: end;
     }
-    .food content{
-        grid-template-columns: repeat(2,1fr);
-    }
+  
+  
     @media screen and (max-width:576px) {
         .container{
             grid-template-columns: repeat(1,1fr);
@@ -37,21 +69,34 @@
   </style>
   <body>
    <div class="container">
-    <div class="food">
+
+    <div class="card">
+  
         <img src="images/sandwich.jpeg" alt="">
+       
+        <div class="card-content">
         <h3>Food Item-1</h3>
         <p>Price: $100</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, iure? Nihil voluptate accusamus provident. Praesentium magnam obcaecati debitis consequuntur quo.</p>
         <button>Buy Now</button>
-      
-    </div>
-    <div class="food">
+    </div> 
+    </div> 
+    
+    
+    <div class="card">
+         
+
+   
         <img src="images/salad.jpg" alt="">
+
+        <div class="card-content">
         <h3>Food Item-2</h3>
         <p>Price: $200</p>
         <p>Incidunt eum, error totam dolorem ea voluptates fugiat soluta quod, quia tempora, excepturi odio vel enim dignissimos accusantium fugit reprehenderit?</p>
         <button>Buy Now</button>
-        </div>
+</div>
+      
+       
     </div>
     
     
