@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Different Device</title>
+  <style>
+ 
+    .container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    img {
+      width: 100%;
+      height:100%;
+      border-radius: 8px;
+      object-fit: cover; 
+    }
+
+    @media screen and (max-width: 992px) {
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .container {
+        width: 80%;
+        padding: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100vh;  
+        object-fit: cover; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Adapt Images for Different Devices</h1>
+  <div class="container">
+    <img src="images/boat.webp">
+  </div>
+</body>
+</html>
