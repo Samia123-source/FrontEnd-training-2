@@ -35,13 +35,30 @@
       
 
        
-      .sqare-collage{
+      .square-collage{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap:3px;
       }
         
+      @media screen and (max-width:576px) {
+        .row{
+          flex-direction: column;
+          height: auto;
+         }
+         .square-collage{
+          grid-template-columns: 1fr;
+         }
 
+       }
+
+       /*medium device*/
+       @media screen and (min-width:576px) and (max-width:992px) {
+        .row{
+          flex-direction: column;
+          height: auto;
+    
+        }
   
 
     
@@ -85,7 +102,7 @@
              <div>            
               <img src="images/Bird.webp" alt="">
             </div>
-            <div class="sqare-collage">
+            <div class="square-collage">
                <img src="images/Lion.jpg" alt="">
                 <img src="images/Lion.jpg" alt="">
                  <img src="images/Lion.jpg" alt="">
